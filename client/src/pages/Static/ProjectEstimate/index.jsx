@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import { Project } from "../../../assets/constant";
 
 const ProjectEstimate = () => {
+    const navigate = useNavigate();
     return (
         <div className="custom-container px-4 sm:px-8 md:px-12 lg:px-20 pb-16">
             {/* Main Wrapper */}
@@ -20,7 +22,8 @@ const ProjectEstimate = () => {
 
                 {/* Button Section */}
                 <div className="flex items-center justify-center">
-                    <button className="mt-6 bg-[#996830] text-white py-3 px-8 sm:py-4 sm:px-10 rounded-xl shadow-md hover:bg-[#7e5825] transition-all font-medium text-sm sm:text-base leading-tight">
+                    <button className="mt-6 bg-[#996830] text-white py-3 px-8 sm:py-4 sm:px-10 rounded-xl shadow-md hover:bg-[#7e5825] transition-all font-medium text-sm sm:text-base leading-tight"
+                    onClick={() => navigate("/maintenance")} >
                         GET LIVE ESTIMATION
                     </button>
                 </div>

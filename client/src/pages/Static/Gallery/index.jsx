@@ -24,8 +24,8 @@ const Gallery = () => {
     AOS.init();
   }, [])
   return (
-    <div className="custom-container hide-scrollbar Overflow-hidden">
-      <div id="gallery" className="py-5 ">
+    <div className="custom-container ">
+      <div id="gallery" className="hide-scrollbar Overflow-hidden py-5 ">
         <div className="mb-10">
           <h2 className="text-xl font-semibold text-[#996830cc] leading-[20px] mb-2">
             <span className="border-t border-[#996830cc] w-12 inline-block mr-2 mb-1"></span>GALLERY
@@ -104,8 +104,8 @@ const Gallery = () => {
       </div>
 
 {/* mobile size */}
-
-      <div className="gallerymobilesize flex flex-col gap-24">
+    <div className="hide-scrollbar Overflow-hidden">
+      <div className=" gallerymobilesize flex flex-col gap-24">
         <div className="rounded-md overflow-hidden" data-aos="fade-up" data-aos-duration="1000" >
           <img src={galleryone} alt="Gallery One" className="w-full object-cover" />
         </div>
@@ -168,6 +168,7 @@ const Gallery = () => {
           <img src={falseceilingtwo} alt="False Ceiling Two" className="w-full object-cover" />
         </div>
       </div>
+    </div>
     </div>
   );
 };

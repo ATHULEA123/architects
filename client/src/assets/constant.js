@@ -46,6 +46,7 @@ export { default as wardrobecal } from "../assets/icons/wardrobecal.png"
 export { default as wallpanel } from "../assets/icons/wallpanel.png"
 export { default as falseceilingcal } from "../assets/icons/falseceiling.png"
 export { default as wallpainting } from "../assets/icons/wallpainting.png"
+export {default as construction} from "./icons/construction.png"
 // export {default as table} from "../assets/icons/table.png";
 // export {default as falseceiling} from "../assets/icons/false.png";
 // export {default as chennaiportfolio} from "../assets/icons/chennaiportfolio.png";

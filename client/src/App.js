@@ -80,6 +80,7 @@ import {Activity, Architect, ContactUs,  LeadContent, LiveEstimation, PageNotFou
 import Leads from "./pages/Leads/LeadItems";
 import { Design, DesignContent } from "./pages/Design";
 import { Work, WorkContent } from "./pages/Work";
+import UndeProcessing from "./pages/UnderProcessing";
 
 // Function to check if the user is authenticated
 const isAuthenticated = () => {
@@ -97,6 +98,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+        <Route path="/maintenance" element={<UndeProcessing/>} />
           <Route path="/test" element={<Testfile />} />
           <Route path="/architect" element={<ArchitectPortal portalType="architect" />} />
           <Route path="/master" element={<ArchitectPortal portalType="master" />} />
@@ -105,6 +107,7 @@ function App() {
           <Route path="/contactpage" element={<ContactUs />} />
           <Route path="/userupdate" element={<UsersideUpdate />} />
              <Route path="/liveestimation" element={<LiveEstimation/>}/>
+            
 
           <Route
             path="/pannel"
